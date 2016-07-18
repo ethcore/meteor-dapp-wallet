@@ -283,7 +283,7 @@ Template['views_account_create'].events({
     @event submit
     */
     'submit': function(e, template){
-        var code = walletStubABI; // walletStubABI 184 280 walletABI ~1 842 800
+        var code = '0x' + walletStubABI; // walletStubABI 184 280 walletABI ~1 842 800
         var type = TemplateVar.get('selectedSection');
         var deployFrom = template.find('select[name="dapp-select-account"]').value.toLowerCase();
 
